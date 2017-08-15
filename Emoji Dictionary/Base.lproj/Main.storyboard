@@ -32,7 +32,9 @@
                             <outlet property="delegate" destination="xDb-G2-CbR" id="KJI-VP-gyE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="tAS-f4-dFZ"/>
+                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="tAS-f4-dFZ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fje-Kp-e1R"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="e9H-ak-Zqx" kind="show" identifier="ourSegue" id="sK7-vl-AFk"/>
                     </connections>
@@ -41,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1272.8" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="oJp-HG-Yqi">
             <objects>
-                <viewController id="e9H-ak-Zqx" sceneMemberID="viewController">
+                <viewController id="e9H-ak-Zqx" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgE-5U-HR9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wwX-5c-zXC"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiDefinition" destination="55a-aV-DJg" id="8b2-z7-It3"/>
+                        <outlet property="emojiLabel" destination="mSa-qa-Jbk" id="NI7-mb-WVF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSR-cw-Xev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
