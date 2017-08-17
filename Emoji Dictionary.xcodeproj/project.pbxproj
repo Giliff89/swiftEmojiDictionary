@@ -13,6 +13,7 @@
 		332193071F427CDF002C8469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332193051F427CDF002C8469 /* LaunchScreen.storyboard */; };
 		3321930F1F427F45002C8469 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321930E1F427F45002C8469 /* EmojiTableViewController.swift */; };
 		332193111F42A312002C8469 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332193101F42A312002C8469 /* DefinitionViewController.swift */; };
+		332193131F462AE6002C8469 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332193121F462AE5002C8469 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		332193081F427CDF002C8469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3321930E1F427F45002C8469 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		332193101F42A312002C8469 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		332193121F462AE5002C8469 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				332192FC1F427CDF002C8469 /* AppDelegate.swift */,
 				3321930E1F427F45002C8469 /* EmojiTableViewController.swift */,
 				332193101F42A312002C8469 /* DefinitionViewController.swift */,
+				332193121F462AE5002C8469 /* Emoji.swift */,
 				332193001F427CDF002C8469 /* Main.storyboard */,
 				332193031F427CDF002C8469 /* Assets.xcassets */,
 				332193051F427CDF002C8469 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				3321930F1F427F45002C8469 /* EmojiTableViewController.swift in Sources */,
 				332193111F42A312002C8469 /* DefinitionViewController.swift in Sources */,
+				332193131F462AE6002C8469 /* Emoji.swift in Sources */,
 				332192FD1F427CDF002C8469 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

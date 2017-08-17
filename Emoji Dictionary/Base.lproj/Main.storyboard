@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8XP-W2-eJI">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,15 +14,15 @@
             <objects>
                 <tableViewController id="xDb-G2-CbR" customClass="EmojiTableViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nst-Zb-c9i">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Yjz-9H-PHP">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yjz-9H-PHP" id="yTK-KW-Yo9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -48,17 +48,23 @@
             <objects>
                 <viewController id="e9H-ak-Zqx" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgE-5U-HR9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSa-qa-Jbk">
-                                <rect key="frame" x="106" y="164" width="163" height="179.5"/>
+                                <rect key="frame" x="125.66666666666669" y="164" width="163" height="179.66666666666669"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A fine glass of bourbon whiskey, neat." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55a-aV-DJg">
-                                <rect key="frame" x="20" y="446" width="335" height="21"/>
+                                <rect key="frame" x="20" y="515" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Food and Drink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0K-g8-Phh">
+                                <rect key="frame" x="109.66666666666669" y="447" width="195.66666666666663" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,15 +73,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mSa-qa-Jbk" firstAttribute="centerX" secondItem="xgE-5U-HR9" secondAttribute="centerX" id="FhX-qW-Zmt"/>
+                            <constraint firstItem="T0K-g8-Phh" firstAttribute="centerX" secondItem="xgE-5U-HR9" secondAttribute="centerX" id="Ily-qW-eu4"/>
                             <constraint firstItem="wwX-5c-zXC" firstAttribute="bottom" secondItem="55a-aV-DJg" secondAttribute="bottom" constant="200" id="QjA-Bm-spH"/>
                             <constraint firstItem="55a-aV-DJg" firstAttribute="leading" secondItem="wwX-5c-zXC" secondAttribute="leading" constant="20" id="Tgw-z4-kzl"/>
+                            <constraint firstItem="wwX-5c-zXC" firstAttribute="bottom" secondItem="T0K-g8-Phh" secondAttribute="bottom" constant="268" id="qgM-U7-2QH"/>
                             <constraint firstItem="mSa-qa-Jbk" firstAttribute="top" secondItem="wwX-5c-zXC" secondAttribute="top" constant="100" id="xfs-fy-qfW"/>
                             <constraint firstItem="wwX-5c-zXC" firstAttribute="trailing" secondItem="55a-aV-DJg" secondAttribute="trailing" constant="20" id="y0I-1z-Plv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wwX-5c-zXC"/>
                     </view>
                     <connections>
-                        <outlet property="emojiDefinition" destination="55a-aV-DJg" id="8b2-z7-It3"/>
+                        <outlet property="categoryLabel" destination="T0K-g8-Phh" id="FmT-Z6-WhL"/>
+                        <outlet property="emojiDefinitionLabel" destination="55a-aV-DJg" id="DuG-2U-ctl"/>
                         <outlet property="emojiLabel" destination="mSa-qa-Jbk" id="NI7-mb-WVF"/>
                     </connections>
                 </viewController>
